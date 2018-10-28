@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8">
+
+  <script type="text/javascript">
+    function wypisz() {
+      var liczba1 = document.getElementById("liczba1").value;
+      var liczba2 = document.getElementById("liczba2").value;
+      var wynik = "";
+      if (liczba1 > liczba2) {
+        document.getElementById("wypisuje").innerHTML = "2 liczba nie może być większa od 1";
+      } else {
+        for (var i = liczba1; i <= liczba2; i++) {
+          wynik = wynik + i + " ";
+        }
+        document.getElementById("wypisuje").innerHTML = wynik;
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <input type="text" id="liczba1" />
+  <input type="text" id="liczba2" />
+  <input type="submit" value="Wypisz liczby" onclick="wypisz()" />
+  <div id="wypisuje"></div>
+
+</body>
+
+</html>

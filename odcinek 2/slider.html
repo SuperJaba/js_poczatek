@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" lang="pl" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+
+    <style>
+        body {
+            background-color: black;
+            font-size: 24px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body onload="slider()">
+
+    <span onclick="setSlider(1)" style="cursor:pointer">[ 1 ]</span>
+    <span onclick="setSlider(2)" style="cursor:pointer">[ 2 ]</span>
+    <span onclick="setSlider(3)" style="cursor:pointer">[ 3 ]</span>
+    <span onclick="setSlider(4)" style="cursor:pointer">[ 4 ]</span>
+    <span onclick="setSlider(5)" style="cursor:pointer">[ 5 ]</span>
+
+    <div id="slider"></div>
+
+</body>
+
+</html>
